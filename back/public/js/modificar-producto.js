@@ -13,3 +13,9 @@ formModificar.addEventListener("submit", (e) => {
   e.preventDefault();
   modificarProducto(formModificar);
 });
+
+
+  const btnSalir = document.getElementById("btn-salir");
+  btnSalir.onclick = () => {
+    window.history.back();
+  };

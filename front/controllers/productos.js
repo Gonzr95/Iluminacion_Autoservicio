@@ -1,4 +1,4 @@
-import { cambiarTema, page } from './utils/funciones-variables.js';
+import { cambiarTema, page, irALogin } from './utils/funciones-variables.js';
 const btnTema = document.getElementById("btn-tema");
 const btnProductos = document.getElementById("btn-productos");
 const btnCarrito = document.getElementById("btn-carrito");
@@ -7,6 +7,8 @@ const btnFaroles = document.getElementById("btn-faroles");
 const btnPlafones = document.getElementById("btn-plafones");
 const nextBtn = document.getElementById('nextBtn');
 const prevBtn = document.getElementById('prevBtn');
+const btnAdministrador = document.getElementById("btn-administrador");
+btnAdministrador.onclick = irALogin;
 
 // Primera carga
 page.render();

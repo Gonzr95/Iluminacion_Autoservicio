@@ -5,6 +5,7 @@ import {
   apiUrl,
   traerGuardados,
   mostrarProductosTicket,
+  irALogin
 } from './utils/funciones-variables.js';
 const body = document.getElementsByTagName('body')[0];
 const btnTema = document.getElementById('btn-tema');
@@ -19,6 +20,8 @@ const btnSalir = document.getElementById('btn-salir');
 const productosCarrito = traerGuardados();
 const nombreCliente = localStorage.getItem('cliente');
 const fecha = new Date().toLocaleString();
+const btnAdministrador = document.getElementById("btn-administrador");
+btnAdministrador.onclick = irALogin;
 let precioTotal = mostrarProductosTicket(tableBody, precioTotalElement);
 
 let tema = obtenerTema();

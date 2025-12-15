@@ -1,4 +1,4 @@
-const frontUrl = "http://localhost:5500"; // Según el puerto de Live Server
+const frontUrl = "http://localhost:5501"; // Según el puerto de Live Server
 const apiUrl = "http://localhost:3000"; // Según el puerto de Express
 const categoriaA = 'Farol';
 const categoriaB = 'Plafon';

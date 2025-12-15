@@ -1,4 +1,4 @@
-import { cambiarTema, apiUrl, mostrarGuardados, confirmarCompra } from './utils/funciones-variables.js';
+import { cambiarTema, apiUrl, mostrarGuardados, confirmarCompra, irALogin } from './utils/funciones-variables.js';
 const btnTema = document.getElementById("btn-tema");
 const btnProductos = document.getElementById("btn-productos");
 const btnCarrito = document.getElementById("btn-carrito");
@@ -7,6 +7,8 @@ const precioTotalElement = document.getElementById('precio-total');
 const btnFinalizarCompra = document.getElementById("btn-finalizar-compra");
 const nombreCliente = localStorage.getItem("cliente");
 const { precioTotal, arrayId } = mostrarGuardados();
+const btnAdministrador = document.getElementById("btn-administrador");
+btnAdministrador.onclick = irALogin;
 precioTotalElement.innerText = `Precio total: $${precioTotal}`;
 btnTema.onclick = cambiarTema;
 

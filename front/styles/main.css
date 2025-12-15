@@ -51,7 +51,10 @@ main{
   }
 
 }
-
+.name-input:-webkit-autofill,
+.name-input:-webkit-autofill:hover,
+.name-input:-webkit-autofill:focus,
+.name-input:-webkit-autofill:active,
 .name-input{
   font-size: 35px;
   width: auto;

@@ -1,7 +1,7 @@
 import { Pagination } from "./pagination.js";
 // ------------------------------ Variables ------------------------------
 const apiUrl = 'http://localhost:3000';
-const nombreEmpresa = 'Luciano Iluminación';
+const nombreEmpresa = 'Gonzalo Iluminación';
 const sectionProductos = document.getElementById("section-productos");
 const divProducts = document.getElementById('products');
 const categoriaA = "Farol";
@@ -29,7 +29,7 @@ function cambiarTema() {
 async function ingresar(inputNombre, mensajeElement) {
   const nombre = inputNombre.value;
   if (nombre.length === 0) {
-    mensajeElement.innerText = "Por favor, ingrese su nombre...";
+    mensajeElement.innerText = "Para ver el catalogo, por favor ingrese su nombre...";
   } else {
     mensajeElement.innerText = "";
     localStorage.setItem("cliente", nombre);

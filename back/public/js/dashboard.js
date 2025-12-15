@@ -23,3 +23,10 @@ btnFaroles.onclick = () => {
 btnPlafones.onclick = () => {
   mostrarProductos(categoriaB, sectionProductos);
 };
+
+
+
+  const btnSalir = document.getElementById("btn-salir");
+  btnSalir.onclick = () => {
+    window.history.back();
+  };

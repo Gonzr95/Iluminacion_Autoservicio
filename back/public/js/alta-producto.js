@@ -1,3 +1,4 @@
+//import { width } from 'pdfkit/js/page';
 import { cambiarTema, agregarProducto } from './utils/funciones-variables.js';
 const btnTema = document.getElementById('btn-tema');
 const btnCancelar = document.getElementById("btn-cancelar");
@@ -23,3 +24,8 @@ formAgregar.addEventListener("submit", (e) => {
         ? inputFile.files[0].name 
         : "No se ha seleccionado ningún archivo";
   });
+
+  const btnSalir = document.getElementById("btn-salir");
+  btnSalir.onclick = () => {
+    window.history.back();
+  };
